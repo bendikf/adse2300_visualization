@@ -1,0 +1,59 @@
+project:
+  output-dir: _output
+  
+pdf-engine: lualatex
+
+editor: source
+
+execute: 
+  echo: false
+  warning: false
+
+bibliography: references.bib
+csl: apa-annotated-bibliography.csl
+# cite-method: biblatex
+# biblatexoptions:
+  # - citestyle = authoryear
+
+link-citations: yes
+citations-hover: true
+    
+crossref:
+  fig-prefix: Figure
+  fig-title: Figure
+  tbl-prefix: Table
+  tbl-title: Table
+  ref-hyperlink: true
+
+format:
+  pdf:
+    documentclass: article
+    papersize: A4
+    fontfamily: libertinus
+    colorlinks: true
+    margin-left:   30mm
+    margin-right:  30mm
+    margin-top:    30mm
+    margin-bottom: 30mm
+    fontsize: '12pt'
+    linestretch: 1.5
+    monofont: DejaVu Sans Mono
+    
+    include-in-header:
+      text: |
+        \usepackage{parcolumns}
+        \usepackage{mathtools}
+        \usepackage{enumitem}
+        \usepackage{hyperref}
+        \usepackage{geometry}
+        \usepackage{float}
+        \usepackage{fontspec}
+        \usepackage{sectsty}
+        \usepackage[super]{nth}
+        
+# \usepackage{emoji}
+
+# Vet ikke hvordan dette funker:
+
+# classoption: 
+#   - titlepage=false
