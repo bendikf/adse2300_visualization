@@ -5,4 +5,4 @@
 The report was produced using Quarto. The Quarto source code can be viewed in the file `exam_part1.qmd`.
 
 ### R code:
-The R code used to create the visualisations is contained in the two files `code.R` and `plot_code.R`.
+The R code used to create the visualisations is contained in the file `plot_code.R`.
